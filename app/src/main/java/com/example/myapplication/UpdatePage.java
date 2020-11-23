@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class UpdatePage extends AppCompatActivity {
     EditText _uname, _upass ;
@@ -25,6 +26,7 @@ public class UpdatePage extends AppCompatActivity {
 
         DBHelper helper = new DBHelper(this, DBNAME,null,DB_VERSION) ;
         helper.update(uname,upass);
+
 
     }
 }
